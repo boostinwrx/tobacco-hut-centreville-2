@@ -1,0 +1,109 @@
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import StoreWide from "../assets/store_wide_interior_retouch_final.jpg"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
+import GatsbyImage from "gatsby-image";
+
+const AboutPage = ({ data }, location) => {
+  const siteTitle = data.site.siteMetadata.title
+const addrObj = data.site.siteMetadata.storeInfo.address
+  const street = addrObj.street
+  const city = addrObj.city
+  const state = addrObj.state
+  return (
+    <Layout title={siteTitle}>
+      <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+
+      <article className="post-content page-template">
+
+
+        <div className="post-content-body">
+          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+            Clean, minimal, and deeply customisable. London is a theme made for
+            people who appreciate simple lines.
+          </h2>
+<<<<<<< HEAD
+          <figure className="kg-card kg-image-card kg-width-half">
+            <img className={'kg-image-card'} alt={'StoreWide'} src={StoreWide}/>
+=======
+          <figure className="kg-card kg-image-card kg-width-full">
+            <Img
+              fluid={data.benchAccounting.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>Large imagery is at the heart of this theme</figcaption>
+>>>>>>> parent of 3e695f0 (Render deliverable met, images for products render but are blurry, thumbnails not rendering yet. Debugged until it was somewhat useable.)
+          </figure>
+          <h3 id="dynamic-styles">Come Visit Us!</h3>
+         <h4>{}</h4>
+
+          <p>
+            Both post and page templates are light and minimal, with all the
+            focus on the content while the design of the theme gets out of the
+            way. Beneath the hood, London enjoys the full power of the{" "}
+            <a href="https://docs.ghost.org/api/handlebars-themes/">
+              Ghost Handlebars Theme API
+            </a>{" "}
+            to provide limitless customisation options and dynamic styles.
+          </p>
+          <p>
+            Don't forget to check out the{" "}
+            <a href="https://docs.ghost.org/integrations/">
+              Ghost Integrations Directory
+            </a>{" "}
+            for more ways to integrate Ghost with your favourite services.
+          </p>
+        </div>
+      </article>
+    </Layout>
+  )
+}
+
+const indexQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+       devInfo {
+              developer
+              github
+              portfolio
+            }
+        description
+        storeInfo {
+          phone
+          address {
+            
+            city
+            state
+            zip
+          }
+          hours
+        }
+      }
+    }
+    benchAccounting: file(
+      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+export default props => (
+  <StaticQuery
+    query={indexQuery}
+    render={data => (
+      <AboutPage location={props.location} data={data} {...props} />
+    )}
+  />
+)
