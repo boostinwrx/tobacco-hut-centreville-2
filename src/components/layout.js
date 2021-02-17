@@ -30,14 +30,9 @@ const Layout = props => {
                 <Link to={`/`}>Home</Link>
               </li> */}
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+                <Link to={`/about`}><h4>About</h4></Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
-              <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Tags</Link>
-              </li>
+
             </ul>
           </nav>
           <div className="site-head-center">
@@ -48,12 +43,12 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
-                href="https://www.facebook.com"
-                title="Facebook"
+                href="https://goo.gl/maps/6bMJVbPWtEuELEWF7"
+                title="Google Maps"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                <h4>Google Maps</h4>
               </a>
               <a
                 href="https://twitter.com"

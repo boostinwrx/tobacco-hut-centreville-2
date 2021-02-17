@@ -1,7 +1,7 @@
 module.exports = {
   name: 'Tobacco Hut Centreville',
   shortName: 'Tobacco Hut',
-  description: 'Your one-stop-shop for everything tobacco" and vape!',
+  description: 'Your one-stop-shop for everything tobacco and vape!',
   url: 'https://tobacco-hut-centreville.com', // Domain of your site without prefix!
   prefix: '/',
   devInfo:{
