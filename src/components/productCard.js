@@ -10,17 +10,18 @@ export default props => (
     style={
       props.node.frontmatter.thumbnail && {
         backgroundImage: `url(${
-          props.node.frontmatter.thumbnail.childImageSharp.fluid
+          props.node.frontmatter.thumbnail.childImageSharp.fluid.src
         })`,
       }
     }
   >
-      {
-        props.node.frontmatter.thumbnail
-          ?(<ContentWithImage props={props}/>)
-          :(<ContentNoImage props={props}/>)
-      }
+    {
+      props.node.frontmatter.thumbnail
+        ?(<ContentWithImage props={props}/>)
+        :(<ContentNoImage props={props}/>)
+    }
   </article>
+
 )
 
 class ContentNoImage extends Component {

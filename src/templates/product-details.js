@@ -10,6 +10,7 @@ class ProductDetailsTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
 
+    console.log(post)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -28,11 +29,13 @@ class ProductDetailsTemplate extends React.Component {
           )}
 
           {post.frontmatter.thumbnail && (
-            <div className="post-content-image">
+            <div className="post-content-image" >
               <Img
+                onLoad={console.log(post.frontmatter.thumbnail.childImageSharp.fix)}
                 className="kg-image"
-                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
+                fixed={post.frontmatter.thumbnail.childImageSharp.fixed}
                 alt={post.frontmatter.title}
+
               />
             </div>
           )}
@@ -89,8 +92,8 @@ export const pageQuery = graphql`
         description
         thumbnail{
           childImageSharp {
-            fluid(maxWidth: 1360) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 1360) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
