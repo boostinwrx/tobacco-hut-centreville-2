@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { styled } from '@material-ui/core/styles';
+
+
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
@@ -30,7 +33,7 @@ const Layout = props => {
                 <Link to={`/`}>Home</Link>
               </li> */}
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}><h4>About</h4></Link>
+                <Link to={`/about`}>About </Link>
               </li>
 
             </ul>

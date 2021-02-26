@@ -19,7 +19,7 @@ const ProductIndex = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title={siteTitle}
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`vape`, `store`, `virginia`, `centreville`, `react`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (

@@ -10,6 +10,12 @@ var plugins = [{
     },{
       plugin: require('/Users/tiffanyabraham/Development/2021/tobaccohut/tobacco-hut-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/tiffanyabraham/Development/2021/tobaccohut/tobacco-hut-website/node_modules/gatsby-plugin-material-ui/gatsby-ssr'),
+      options: {"plugins":[],"stylesProvider":{"injectFirst":true}},
+    },{
+      plugin: require('/Users/tiffanyabraham/Development/2021/tobaccohut/tobacco-hut-website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

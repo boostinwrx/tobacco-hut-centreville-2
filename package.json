@@ -8,6 +8,8 @@
     "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
   },
   "dependencies": {
+    "@material-ui/styles": "^4.11.3",
+    "babel-plugin-styled-components": "^1.12.0",
     "chalk": "^4.1.0",
     "contentful": "^8.1.7",
     "gatsby": "^2.32.3",
@@ -16,12 +18,14 @@
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-image": "^0.7.1",
     "gatsby-plugin-manifest": "^2.12.0",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-netlify": "^2.11.0",
     "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-postcss": "^2.3.13",
     "gatsby-plugin-purgecss": "^3.1.1",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.1",
+    "gatsby-plugin-styled-components": "^3.10.0",
     "gatsby-remark-copy-linked-files": "^2.10.0",
     "gatsby-remark-images": "^2.0.6",
     "gatsby-remark-prismjs": "^3.13.0",
@@ -35,13 +39,16 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
+    "styled-components": "^5.2.1",
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typeface-nunito": "^0.0.72",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "prop-types": "latest"
   },
   "devDependencies": {
+    "@material-ui/core": "^4.11.3",
     "autoprefixer": "^9.8.6",
     "postcss-color-function": "^4.1.0",
     "postcss-custom-properties": "^8.0.10",

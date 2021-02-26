@@ -132,9 +132,20 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-image`,
     `gatsby-plugin-react-helmet`,
+    `babel-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }
