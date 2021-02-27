@@ -6,7 +6,7 @@ description: We have hundreds of high quality glass pieces and pipes.
 ---
 ## Our back wall is a colorful showcase of our glass products. Whether you want a water pipe, bubbler, or dry herb pipe – we have plenty to choose from!
 
-<div class="kg-card kg-image-card kg-width-full">
+<div src='./glass_overhead.jpg' class="kg-card kg-image-card kg-width-full">
 
 ![](./glass_overhead.jpg)
 
