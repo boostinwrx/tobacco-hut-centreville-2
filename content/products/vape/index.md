@@ -7,11 +7,9 @@ description: We have a wide selection of e-juice, vapes, and vape accessories.
 
 ## Mods from industry leaders such as SMOK
 
-<div class="kg-card kg-image-card kg-width-full">
+<img class="kg-card kg-image-card kg-width-full" src="./mods.jpg" alt="Vape mod"/>
 
-![Vape](./mods.jpg)
 
-</div>
 <div class="kg-card kg-image-card kg-width-full">
 
 ![Vape](./mods_2.jpg)
