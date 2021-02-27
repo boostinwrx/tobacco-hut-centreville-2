@@ -2,7 +2,7 @@
 title: Novelties
 date: "2019-05-07"
 tags: [novelty,color]
-thumbnail: ./INCENSE-2.jpg
+thumbnail: ./ZIPPO-2.jpg
 description: We carry much more than simply vape and tobacco!
 ---
 
