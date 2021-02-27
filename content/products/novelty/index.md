@@ -5,17 +5,14 @@ tags: [novelty,color]
 thumbnail: ./INCENSE.jpg
 description: We carry much more than simply vape and tobacco!
 ---
-![Novelty](./INCENSE-2.jpg)
 
 
- ### Our store sells much more than the name would have you believe
+ ## Our store sells much more than the name would have you believe
 
-<div class="kg-gallery-container">
-<div class="kg-gallery-row">
-<div class="kg-gallery-card">
-<img class="kg-card kg-gallery-image" src="INCENSE-2.jpg">
+We strive to offer the most diverse collection of products, including novelties.
 
-</img>
-</div>
-</div>
+### Incense and Scented Candles
+<div class="kg-card kg-image-card kg-width-half">
+
+![Novelty](./INCENSE.jpg)
 </div>

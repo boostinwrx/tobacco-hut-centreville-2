@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { styled } from '@material-ui/core/styles';
 
 
@@ -32,9 +31,9 @@ const Layout = props => {
               {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li> */}
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About </Link>
-              </li>
+              <h4 className="nav-about" role="menuitem">
+                <Link to={`/about`}>About Us </Link>
+              </h4>
 
             </ul>
           </nav>
@@ -45,38 +44,17 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <div className="social-links">
-              <a
-                href="https://goo.gl/maps/6bMJVbPWtEuELEWF7"
+              <h4
+
                 title="Google Maps"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h4>Google Maps</h4>
-              </a>
-              <a
-                href="https://twitter.com"
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
-              <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+                <Link to={"https://goo.gl/maps/6bMJVbPWtEuELEWF7"}>Google Maps </Link>
+              </h4>
+
+<li>Visit us!</li>
+
             </div>
           </div>
         </div>

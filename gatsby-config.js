@@ -1,6 +1,5 @@
 const urljoin = require("url-join")
 const siteConfig = require("./siteConfig")
-
 module.exports = {
   siteMetadata: {
     title: siteConfig.name,
@@ -49,6 +48,7 @@ module.exports = {
     //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     //   },
     // },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
