@@ -14,5 +14,5 @@ We strive to offer the most diverse collection of products, including novelties.
 ### Incense and Scented Candles
 <div class="kg-card kg-image-card kg-width-half">
 
-![Novelty](./INCENSE-2.jpg)
+![Novelty](./ZIPPO-2.jpg)
 </div>
